@@ -3,8 +3,6 @@ import classes from './BurgerIngridient.module.css';
 import propTypes from 'prop-types';
 
 class BurgerIngridient extends Component{
-
-
     render(){
 
         let ingridient = null;
