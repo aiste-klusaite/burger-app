@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Burger from '../../components/Burger/Burger';
 import BuildControls from '../../components/Burger/BuildControls/BuildControls';
-import Aux from '../../hoc/Ax';
+import Aux from '../../hoc/Ax/Ax';
 import Modal from '../../components/UI/Modal/Modal';
 import OrderSummary from '../../components/Burger/OrderSummary/OrderSummary';
 
@@ -26,8 +26,7 @@ class BurgerBuilder extends Component {
         purchasing: false
     }
 
-updatePurchaseState (ingridients) {
-
+updatePurchaseState = (ingridients) => {
     const sum = Object.keys(ingridients).map(igKey => {
         return ingridients[igKey];
     }).reduce((sum, el) => {
